@@ -17,8 +17,8 @@
 #define LVGL_BUF_SIZE           (ESP_PANEL_LCD_H_RES * 20)
 
 // Set WiFi name and password
-const char* ssid = "ss";
-const char* password = "20170317";
+const char* ssid = "xx";
+const char* password = "xxx";
 
 // API service address
 const char* apiServer = "http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp";
@@ -54,6 +54,7 @@ void add_gongde(lv_event_t * e)
     lv_label_set_text_fmt(ui_gongdenumb, "%s", gongde_str);
   } else {
     lv_label_set_text_fmt(ui_gongdenumb, "%s", "MAX");
+    gongde_count = 0;
   }
 }
 
