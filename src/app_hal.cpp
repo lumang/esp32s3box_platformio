@@ -47,7 +47,7 @@
 
 #define buf_size 10
 
-ChronosESP32 watch("Chronos C3");
+ChronosESP32 watch("Chronos S3Box");
 Preferences prefs;
 ESP_Panel *panel = NULL;
 SemaphoreHandle_t lvgl_mux = NULL;                  // LVGL mutex
@@ -716,7 +716,7 @@ void hal_setup()
   watch.set24Hour(true);
   watch.setBattery(85);
 
-  String about = "v3.0 [fbiego]\nESP32 C3 Mini\n" + watch.getAddress();
+  String about = "v3.0 [fbiego]\nESP32 S3 Mini\n" + watch.getAddress();
   lv_label_set_text(ui_aboutText, about.c_str());
 
   // bool intro = prefs.getBool("intro", true);

@@ -20,6 +20,10 @@
 #define LVGL_TASK_PRIORITY      (2)
 #define LVGL_BUF_SIZE           (ESP_PANEL_LCD_H_RES * 20)
 
+// screen configs
+#define WIDTH 320
+#define HEIGHT 240
+
 void hal_setup();
 void hal_loop();
 
